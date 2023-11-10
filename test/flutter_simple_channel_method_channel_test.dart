@@ -3,7 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_simple_channel/flutter_simple_channel_method_channel.dart';
 
 void main() {
-  MethodChannelFlutterSimpleChannel platform = MethodChannelFlutterSimpleChannel();
+  MethodChannelFlutterSimpleChannel platform =
+      MethodChannelFlutterSimpleChannel();
   const MethodChannel channel = MethodChannel('flutter_simple_channel');
 
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +20,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await platform.getPlatformVersion(), '42');
+    expect(await platform.getNativeVersion(), '42');
   });
 }

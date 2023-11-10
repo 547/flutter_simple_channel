@@ -36,9 +36,9 @@ flutter:
     platforms:
       android:
         package: com.seven.simpleChannel.flutter_simple_channel
-        pluginClass: FlutterSimpleChannelPlugin
+        pluginClass: FlutterSimpleChannel
       ios:
-        pluginClass: FlutterSimpleChannelPlugin
+        pluginClass: FlutterSimpleChannel
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

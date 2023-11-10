@@ -8,7 +8,8 @@ abstract class FlutterSimpleChannelPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static FlutterSimpleChannelPlatform _instance = MethodChannelFlutterSimpleChannel();
+  static FlutterSimpleChannelPlatform _instance =
+      MethodChannelFlutterSimpleChannel();
 
   /// The default instance of [FlutterSimpleChannelPlatform] to use.
   ///
@@ -23,7 +24,22 @@ abstract class FlutterSimpleChannelPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<String?> getNativeVersion() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<dynamic> sendDataToNative(Map<String, dynamic> arguments) {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<dynamic> Function(String? value)? updateUserToken;
+  Future<dynamic> Function(dynamic value)? transmitData;
+  void listenUserToken(
+      Future<dynamic> Function(String? value) updateUserToken) {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  void listenNativeData(Future<dynamic> Function(dynamic value) transmitData) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }
