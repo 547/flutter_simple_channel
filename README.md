@@ -1,2 +1,15 @@
 # flutter_simple_channel
-flutter和android、iOS混编时用于原生和flutter相互传递信息
+
+A new Flutter plugin project.
+
+## Getting Started
+
+This project is a starting point for a Flutter
+[plug-in package](https://flutter.dev/developing-packages/),
+a specialized package that includes platform-specific implementation code for
+Android and/or iOS.
+
+For help getting started with Flutter development, view the
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
