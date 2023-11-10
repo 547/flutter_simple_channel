@@ -1,0 +1,2 @@
+# flutter_simple_channel
+flutter和android、iOS混编时用于原生和flutter相互传递信息
